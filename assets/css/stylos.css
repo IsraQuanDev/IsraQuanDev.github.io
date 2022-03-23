@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url("../images1/pokebola.PNG");
+  max-height: 10000px;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container3 {
+  position: relative;
+  top: 100px;
+  left: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5em;
+  margin-right: 15em;
+  width: 10em;
+}
+
+.container2 {
+  position: relative;
+  bottom: 100px;
+  left: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.container1 {
+  position: relative;
+  bottom: 70px;
+  left: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: left;
+  width: 40em;
+  margin-left: 20em;
+  margin-right: 20em;
+}
+
+.pokemon {
+  font-family: "Pokemon";
+  font-size: 60px;
+  letter-spacing: 7px;
+  margin-top: 5px;
+  color: #e01033b7;
+  text-shadow: 0 0 10px #ebc51b;
+  align-items: center;
+}
+
+.search {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.search input {
+  height: 40px;
+  width: 200px;
+  text-indent: 20px;
+  font-size: 16px;
+  border: 2px solid rgba(6, 6, 247, 0.5);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-position: bottom right;
+  align-items: right;
+}
+
+.search button {
+  height: 100px;
+  width: 150px;
+  background-image: url("../images1/pokepoke.PNG");
+  background-size: cover;
+  cursor: pointer;
+  align-items: right;
+}
+
+.cardImg {
+  width: 200px;
+  height: 200px;
+  border: 2px solid rgba(0, 0, 0, 1);
+  background: radial-gradient(
+    circle,
+    rgba(10, 43, 155, 0.952) 0%,
+    rgb(0, 0, 134) 30%,
+    rgba(16, 2, 95, 0.774) 70%,
+    rgba(65, 0, 119, 0.548) 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+}
+
+.cardImg img {
+  height: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  font-size: 25px;
+  text-shadow: 0 0 15px #31daf0;
+}
+
+.title h1 {
+  width: 200px;
+  margin-right: 10px;
+  background: rgba(19, 1, 59, 0.801);
+  border: 2px inset rgba(29, 23, 10, 0.8);
+  text-align: center;
+}
+
+.title h2 {
+  width: 100px;
+  background: rgba(19, 1, 59, 0.801);
+  border: 2px inset rgba(20, 16, 6, 0.8);
+  text-align: center;
+}
+
+.content-card {
+  margin: 15px;
+  color: rgba(15, 30, 240, 0.952);
+  text-shadow: 0 0 5px #0476e0b6;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.general {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+}
+
+.dato {
+  margin-right: 15px;
+  margin-left: 15px;
+  text-align: right;
+}
+
+.dato h3 {
+  font-size: 15px;
+  text-align: right;
+}
+
+.dato p {
+  font-size: 15px;
+  text-align: right;
+  color: rgba(178, 233, 27, 0.952);
+}
+
+.stats,
+.abilities {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 15px;
+  text-align: left;
+}
+
+.stats h3,
+.abilities h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.stats ul {
+  font-size: 15px;
+  margin-left: 15px;
+  text-align: center;
+  color: rgba(248, 14, 64, 0.952);
+}
+
+.abilities ul {
+  font-size: 15px;
+  margin-left: 15px;
+  text-align: center;
+  color: rgba(244, 248, 14, 0.952);
+}
+
+.stats ul li,
+.abilities ul li,
+. {
+  margin-bottom: 5px;
+  color: rgba(15, 240, 210, 0.952);
+}
+
+.stats ul li span {
+  float: left;
+  text-align: left;
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+  .pokemon {
+    font-size: 55px;
+    letter-spacing: 3px;
+  }
+
+  .card-image {
+    width: 50%;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 499px) {
+  .pokemon {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .card-image {
+    width: 50%;
+  }
+
+  .cardImg {
+    width: 90%;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 459px) {
+  .title h1 {
+    width: 500px;
+  }
+
+  .pokemon {
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: right;
+  }
+
+  .card-image {
+    width: 50%;
+    text-align: center;
+  }
+
+  .cardImg {
+    width: 90%;
+    text-align: right;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 489px) {
+  .title h1 {
+    width: 500px;
+  }
+
+  .pokemon {
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .card-image {
+    width: 50%;
+  }
+
+  .cardImg {
+    width: 90%;
+  }
+
+  .search {
+    justify-content: right;
+  }
+
+  .search input {
+    margin-right: 50px;
+  }
+}
